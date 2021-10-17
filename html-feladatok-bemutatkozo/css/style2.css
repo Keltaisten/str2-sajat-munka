@@ -1,0 +1,62 @@
+.allImages{
+    width: 100%;
+}
+
+.image1 {
+    width: 54.7%;
+    /* height: 200px; */
+    float: left;
+}
+
+.image2 {
+    width: 45.3%;
+    /* height: 200px; */
+    float: left;
+}
+
+.homeImage{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* height: 300px; */
+    object-fit: cover;
+    height: 320px;
+
+}
+.worksImage{
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    /* height: 300px; */
+}
+
+@media screen and (max-width: 600px) {
+    .homeImage{
+        /* width: 100%; */
+        padding: 0px;
+        /* width: 250px; */
+    }
+}
+@media screen and (max-width: 600px) {
+    .worksImage{
+        /* width: 100%; */
+        padding: 0px;
+        /* width: 250px; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image1{
+      width: 100%;
+      float: left;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    .image2{
+      width: 100%;
+      float: left;
+    }
+  }

@@ -1,0 +1,34 @@
+.contatiner{
+    width: 100%;
+}
+
+.img-container {
+    width: 33%;
+    float: left;
+}
+
+.img-container2 {
+    width: 20%;
+    float: left;
+}
+
+.img {
+    float: left;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    padding: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .img-container{
+      width: 100%;
+      float: left;
+      }
+  }
+
+  @media screen and (max-width: 850px) {
+    .img{
+        margin-bottom: 30px
+    }
+}

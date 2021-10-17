@@ -1,0 +1,226 @@
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #222;
+    font-family: Arial;
+  }
+
+body{
+    background-image: url('images/background_1.jpg');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+  .foot {
+    overflow: hidden;
+    background-color: #222;
+    font-family: Arial;
+    color: white;
+    float: center;
+    padding-left: 50%;
+  }  
+
+  .foot button {
+    float: center;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #111;
+    border-radius: 8px;
+
+  }
+
+  .foot a {
+    float: center;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn, .foot button:hover {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+section {
+    /* margin-top: 32px; */
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    /* max-width: 50%; */
+  }
+
+ .mainPageBox {
+    width: 100%;
+    }
+
+    .box {
+    width: 33%;
+    float: left;
+    color: white;
+    text-align: center;
+    }
+    .sectionHome{
+      color: white;
+    }
+
+    .clearfix::after{
+      content: "";
+      clear: both;
+      display: table;
+  }
+  
+  .mainPageBox::after{
+      content: "";
+      clear: both;
+      display: table;
+  }
+  
+  .imageWork {
+      width: 33%;
+      /* height: 200px; */
+      float: left;
+  }
+  
+  h5{
+      text-align: justify;
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+main{
+  padding-top: 30px;
+  color: white;
+}
+h1{
+  font-size: 3rem;
+}
+
+.main{
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.img_about{
+  width: 100%;
+}
+
+.about_profile{
+  width: 45%;
+  float: left;
+}
+
+.works{
+  color: white;
+}
+
+.about{
+  width: 100%;
+}
+
+.about_list{
+  float: left;
+  font-size: 2rem;
+  margin-left: 200px;
+}
+
+.about::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form{
+  color: white;
+  margin-bottom: 30px;
+}
+
+    @media screen and (max-width: 600px) {
+        .mainPageBox {
+        width: 100%;
+        }
+        .box {
+        width: 100%;
+        float: left;
+        }
+             
+        .imageWork {
+            width: 100%;
+            float: left;
+        }
+        .description {
+            width: 100%;
+            float: left;
+        }
+
+        }
+
+        
+
+
+
