@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Projekt</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https: //use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+    <!-- <script src="https://kit.fontawesome.com/1aec988bc8.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/style.css">
+</head>
+<body>
+
+        <header class="header--dark">
+            <h3 class="header--title">
+                Admin Page
+            </h3>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__search">
+                <input class="search__input" type="search" placeholder="Search..." aria-label="Search">
+                <button class="search__btn" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="logIn">
+                <a class="mobile1" href="#"><i class="fa fa-user"></i></a>
+                <a class="mobile2" href="#"><i class="fa fa-caret-down"></i></a>
+            </div>
+        </header>
+
+        <main class="container">
+            <aside>
+                <nav class="main__nav">
+                    <ul class="nav__ul">
+                        <li><a href="#">CORE</a></li>
+                        <li><a class="mobile" href="#"><i class="fa fa-tachometer"></i><p>Dashboard</p></a></li>
+                        <li><a href="#">INTERFACE</a></li>
+                        <li><a class="mobile" href="#"><i class="fa fa-windows"></i><p class="sub-menu">Layouts</p></a></li>
+                        <li><a class="mobile" href="#"><i class="fa fa-bookmark"></i><p class="sub-menu">Pages</p></a> </li>
+                        <li><a href="#">ADDONS</a></li>
+                        <li><a class="mobile" href="#"><i class="fa fa-area-chart"></i><p>Charts</p></a></li>
+                        <li><a href="#"><i class="fa fa-table"></i><p>Tables</p></a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="content">
+                <h1>Dashboard</h1>
+                <div class="main__breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="main__cards">
+                    <div class="main__card main__card--blue">
+                        <div class="card__top">Primary Card</div>
+                        <div class="card__bottom"><a href="#" class="sub-view">View Details<i class="fa fa-chevron-right right"></i></a></div>
+                    </div>
+                    <div class="main__card main__card--yellow">
+                        <div class="card__top">Warning Card</div>
+                        <div class="card__bottom"><a href="#" class="sub-view">View Details<i class="fa fa-chevron-right right"></i></a></div>
+                    </div>
+                    <div class="main__card main__card--green">
+                        <div class="card__top">Success Card</div>
+                        <div class="card__bottom"><a href="#" class="sub-view">View Details<i class="fa fa-chevron-right right"></i></a></div>
+                    </div>
+                    <div class="main__card main__card--red">
+                        <div class="card__top">Danger Card</div>
+                        <div class="card__bottom"><a href="#" class="sub-view">View Details<i class="fa fa-chevron-right right"></i></a></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+</body>
+</html>
