@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    height: 640px;
+    /* width: 700px; */
+}
+
+.playArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-right: 180px;
+    margin-left: 180px;
+}
+
+.cells{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 150px;
+    /* height: 2rem; */
+    width: 180px;
+    /* width: 9em; */
+    border: 2px solid black;
+
+}
+
+.winner{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: inherit;
+    /* width: inherit; */
+    color: white;
+    flex-direction: column;         /* hogy egymás alá kerüljön */
+}
+
+.h2{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/12951674e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Without Parameters</legend>
+            <button class="show" onclick="openModal()">Open</button>
+        </fieldset>
+        <fieldset>
+            <legend>With Parameters</legend>
+            <p>
+                <button class="show" onclick="openModal({title: 'Title Example'})">Open</button>
+                <input type="text" readonly value="openModal({title: 'Title Example'})"> 
+            </p>
+            <p>
+                <button class="show" onclick="openModal({title: 'Title Example', content: '<p>Content Example</p>'})">Open</button>
+                <input type="text" readonly value="openModal({title: 'Title Example', content: '&lt;p&gt;Content Example&lt;/p&gt;'})"> 
+            </p>
+            <p>
+                <button class="show" onclick="openModal({showClose: false, showCancel: false, closeOnBgClick: false})">Open</button>
+                <input type="text" readonly value="openModal({showClose: false, showCancel: false, closeOnBgClick: false})"> 
+            </p>
+            <p>
+                <button class="show" onclick="openModal({showCancel: false}, (closeReason) => { console.log(closeReason); })">Open</button>
+                <input type="text" readonly value="openModal({showCancel: false}, (closeReason) => { console.log(closeReason); })"> 
+            </p>
+        </fieldset>
+    </main>
+
+    <div class="modal__overlay" onclick="modalBackgroundClick()" style="display:none;">
+        <div class="modal__main" onclick="modalMainClick(event)">
+            <div class="modal__header">
+                <h3 class="modal__title">title</h3>
+                <button class="modal__close" onclick="modalCloseClick()"><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="modal__content">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur placerat purus, a condimentum dolor lobortis sit amet. Suspendisse molestie, metus nec commodo ullamcorper, lorem augue malesuada libero, vitae fermentum turpis diam cursus augue. Maecenas fringilla egestas nisi, a dignissim libero lacinia in. Vestibulum et egestas ipsum, vel varius urna. Quisque interdum laoreet mattis. Nulla ac nulla a leo lacinia mattis. Etiam vehicula orci sit amet erat feugiat interdum. Ut cursus diam neque, viverra maximus velit cursus id. Maecenas ac lacus eleifend, faucibus mi sit amet, rutrum lorem. Aliquam erat volutpat. Suspendisse potenti. Pellentesque placerat ornare nulla, et mattis leo efficitur in.</p>
+            </div>
+            <div class="modal__footer">
+                <button class="modal__cancel button--main" onclick="modalCancelClick()">Cancel</button>
+                <button class="modal__ok button--main" onclick="modalOkClick()">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
